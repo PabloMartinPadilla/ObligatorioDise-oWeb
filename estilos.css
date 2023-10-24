@@ -174,14 +174,14 @@ article > div > p {
 #MayoresLeyendas div:nth-child(1) {
   grid-column: 1/2;
   grid-row: 1/3;
-  background-image: url(img/haaland.jpg);
+  background-image: url(img/Haaland.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #MayoresLeyendas div:nth-child(2) {
   max-width: 100%;
-  background-image: url(img/fooden.jpg);
+  background-image: url(img/Fooden.jpg);
   background-size: cover;
   background-position: center;
 }
