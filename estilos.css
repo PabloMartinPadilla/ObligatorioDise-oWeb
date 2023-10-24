@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #001838;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  max-width: fit-content;
+  text-decoration: underline 3px;
+  text-underline-offset: 5px;
+}
+
+a:hover {
+  background-color: #001838;
+  color: #ffffff;
+}
+
+input[type="button"] {
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #98c5e9;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  background-color: #98c5e9;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+input[type="button"]:hover {
+  background-color: #001838;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #001838;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 70px;
+  max-width: 1300px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #98c5e9;
+  color: whitesmoke;
+  padding: 20px 0;
+  min-width: 1200px;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+header > img {
+  max-width: 150px;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+header > nav > ul > li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+header > h1 {
+  font-weight: normal;
+  color: #001838;
+}
+
+header > p {
+  display: flex;
+  text-align: center;
+  padding: 50px 100px;
+  max-width: 1000px;
+  color: #ffffff;
+}
+
+header > a {
+  text-decoration: none;
+  color: #98c5e9;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Main */
+main {
+  max-width: 1440px;
+  min-width: 1200px;
+  padding: 50px 0px;
+}
+
+main > section {
+  padding-bottom: 120px;
+}
+
+/* Mayores leyendas */
+#MayoresLeyendas article {
+  display: grid;
+  height: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+section > p {
+  padding-bottom: 20px;
+}
+
+#MayoresLeyendas article > div {
+  background-color: #98c5e9;
+  border-radius: 5px;
+}
+
+article > div > p {
+  text-align: end;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+#MayoresLeyendas div:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url(img/haaland.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(2) {
+  max-width: 100%;
+  background-image: url(img/fooden.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(3) {
+  max-width: 100%;
+  background-image: url(img/Doku.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(4) {
+  max-width: 100%;
+  background-image: url(img/Edersson.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(5) {
+  grid-column: 2/4;
+  grid-row: 2;
+  background-image: url(img/Festejo\ Champions.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(6) {
+  grid-column: 4;
+  grid-row: 2/5;
+  background-image: url(img/sergio-kun-aguerojpg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(7) {
+  background-image: url(img/Balotelli.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(8) {
+  grid-column: 2/4;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MayoresLeyendas div:nth-child(8) > img {
+  object-fit: cover;
+  width: 70%;
+}
+
+#MayoresLeyendas div:nth-child(8) > p {
+  text-align: justify;
+}
+
+#MayoresLeyendas div:nth-child(9) {
+  background-image: url(img/tevez.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#MayoresLeyendas div:nth-child(10) {
+  grid-column: 2/4;
+  grid-row: 4;
+  background-image: url(img/Guardiola.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Productos */
+
+#Productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#Productos h2 {
+  grid-column: 2 span;
+}
+
+#Productos article {
+  display: flex;
+  background-color: #98c5e9;
+  border-radius: 5px;
+}
+
+#Productos article > img {
+  width: 50%;
+  object-fit: cover;
+}
+
+#Productos article > div {
+  padding: 20px;
+}
+
+#Productos article > div > p {
+  padding: 0 0 10px 0;
+  text-align: left;
+}
+
+#Productos article > div > p > strong {
+  font-size: 22px;
+}
+
+/*Sobre Nosotros*/
+
+#SobreNosotros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#SobreNosotros article > figure {
+  font-family: "Oswald", sans-serif;
+}
+
+#SobreNosotros article:nth-child(1) {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#SobreNosotros article:nth-child(2) {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+}
+
+#SobreNosotros article:nth-child(3) {
+  grid-column: 4/5;
+  display: flex;
+  flex-direction: column;
+}
+
+#SobreNosotros article > figure > img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*Información*/
+
+#Informacion {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Informacion article {
+  display: flex;
+  flex-direction: column;
+}
+
+#Informacion h2 {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#Informacion div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#Informacion label {
+  font-family: "Oswald", sans-serif;
+}
+
+#Informacion label[for="nombre"] {
+  display: block;
+}
+
+#Informacion label[for="email"] {
+  display: block;
+}
+
+input {
+  margin: 5px 0;
+}
+
+#nombre,
+#email {
+  width: 500px;
+  height: 80px;
+  padding: 10px;
+}
+
+::placeholder {
+  font-family: "Oswald", sans-serif;
+}
+
+table {
+  background-color: #98c5e9;
+  font-family: "Oswald", sans-serif;
+  width: 500px;
+  height: 100%;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #001838;
+  text-align: left;
+}
+
+th {
+  color: #ffffff;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+}
+
+td {
+  padding-left: 10px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #98c5e9;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer img {
+  width: 20px;
+}
